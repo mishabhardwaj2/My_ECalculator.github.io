@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Misha ECalculator</title>
+<style type="text/css">
+h1{
+padding-top:10px;
+}
+body{ 
+background-color:LightSlateGrey; 
+} 
+.answerid{ 
+width:182px; 
+background-color:GreenYellow; 
+color:Red; 
+padding-left:10px; 
+margin-top:10px; 
+
+} 
+.main{ 
+width:250px; 
+height=500px; 
+margin:auto; 
+text-align:center; 
+background-color:DarkMagenta; 
+} 
+input{ 
+background-color:GoldenRod; 
+font-size:20px; 
+margin-bottom:20px; 
+width:50px; 
+}
+</style>
+  </head>
+ <body>
+ <div>
+<div class="main">
+<h1>ECalculator</h1>
+Developed By Misha
+<form name="cal">
+<input type="text" name="answer" class="answerid"> <br><br>
+<input type="button" value="(" onclick="cal.answer.value +='(' ">
+<input type="button" value=")" onclick="cal.answer.value +=')' ">
+<input type="button" value="%" onclick="cal.answer.value +='%' ">
+<input type="button" value="+" onclick="cal.answer.value +='+' "><br><br>
+<input type="button" value="1" onclick="cal.answer.value +='1' ">
+<input type="button" value="2" onclick="cal.answer.value +='2' ">
+<input type="button" value="3" onclick="cal.answer.value +='3' ">
+<input type="button" value="-" onclick="cal.answer.value +='-' "><br><br>
+<input type="button" value="4" onclick="cal.answer.value +='4' ">
+<input type="button" value="5" onclick="cal.answer.value +='5' ">
+<input type="button" value="6" onclick="cal.answer.value +='6' ">
+<input type="button" value="*" onclick="cal.answer.value +='*' "><br><br>
+<input type="button" value="7" onclick="cal.answer.value +='7' ">
+<input type="button" value="8" onclick="cal.answer.value +='8' ">
+<input type="button" value="9" onclick="cal.answer.value +='9' ">
+<input type="button" value="/" onclick="cal.answer.value +='/' "><br><br>
+<input type="button" value="0" onclick="cal.answer.value +='0' ">
+<input type="button" value="." onclick="cal.answer.value +='.' ">
+<input type="button" value="C" onclick="cal.answer.value= '' " id="clear">
+<input type="button" value="=" onclick=" cal.answer.value=eval(cal.answer.value)">
+
+</form>
+</div>
+</div>
+
+    </body>
+</html>
